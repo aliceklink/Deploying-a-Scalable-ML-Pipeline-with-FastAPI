@@ -181,4 +181,34 @@ This model exhibits several concerning biases that must be carefully considered:
 **Appropriate Use Cases:**
 - **Population-level analysis:** Suitable for understanding broad demographic income patterns
 - **Research applications:** Useful for academic studies on socioeconomic factors
-- **Educational purposes:** Good for demonstrating machine learning classificati
+- **Educational purposes:** Good for demonstrating machine learning classification concepts
+- **Baseline comparisons:** Can serve as a benchmark for more sophisticated models
+- **Policy research:** May inform population-level policy discussions with appropriate caveats
+
+**Inappropriate Use Cases:**
+- **Individual employment decisions:** Never use for hiring, promotion, or salary determination
+- **Financial services:** Unsuitable for loan approval, credit scoring, or insurance decisions
+- **Legal proceedings:** Should not inform legal decisions or sentencing
+- **Immigration decisions:** Inappropriate for visa or residency determinations
+- **Real-time applications:** Not suitable for time-sensitive financial decisions
+
+**Best Practices for Use:**
+1. **Always combine with domain expertise** and human judgment
+2. **Establish minimum performance thresholds** before taking any action based on predictions
+3. **Regular auditing** of model decisions for potential discriminatory patterns
+4. **Transparent communication** about model limitations to all stakeholders
+5. **Continuous learning** - update model as new data and better methods become available
+6. **Stakeholder engagement** with affected communities when deploying in sensitive contexts
+
+**Monitoring and Maintenance:**
+- **Performance Monitoring:** Track precision, recall, and F1-score on new data quarterly
+- **Bias Monitoring:** Evaluate performance across demographic groups monthly
+- **Data Drift Detection:** Monitor for changes in input data distribution
+- **Feedback Integration:** Collect and incorporate user feedback on model performance
+- **Regular Retraining:** Schedule annual model updates with new data
+
+**Contact Information:**
+For questions about this model, its appropriate use, or to report issues, please contact the development team through the project repository.
+
+**Version History:**
+- v1.0 (December 2025): Initial model trained on 1994 Census data with Random Forest classifier
