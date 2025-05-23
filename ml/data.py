@@ -51,7 +51,7 @@ def process_data(
         y = np.array([])
 
     X_categorical = X[categorical_features].values
-    X_continuous = X.drop(*[categorical_features], axis=1)
+    X_continuous = X.drop(categorical_features, axis=1)  # Fixed: removed the * operator
 
     if training is True:
         encoder = OneHotEncoder(sparse_output=False, handle_unknown="ignore")
@@ -68,6 +68,7 @@ def process_data(
 
     X = np.concatenate([X_continuous, X_categorical], axis=1)
     return X, y, encoder, lb
+
 
 def apply_label(inference):
     """ Convert the binary label in a single inference sample into string output."""
