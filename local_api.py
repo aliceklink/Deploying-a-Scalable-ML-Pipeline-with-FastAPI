@@ -5,6 +5,11 @@ import requests
 # Send a GET using the URL http://127.0.0.1:8000
 r = requests.get("http://127.0.0.1:8000")
 
+import requests
+
+# Send a GET using the URL http://127.0.0.1:8000
+r = requests.get("http://127.0.0.1:8000")
+
 # Print the status code
 print(f"GET Status Code: {r.status_code}")
 # Print the welcome message
